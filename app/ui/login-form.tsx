@@ -12,23 +12,6 @@ import { useFormState, useFormStatus } from "react-dom";
 import { authenticate } from "@/actions";
 
 export default function LoginForm() {
-  // async function authenticate(
-  //   prevState: string | undefined,
-  //   formData: FormData
-  // ) {
-  //   console.log({
-  //     formData: Object.fromEntries(formData),
-  //   });
-  // try {
-  //   const result = await signIn("credentials", Object.fromEntries(formData));
-  //   console.log(result);
-  // } catch (error) {
-  //   if ((error as Error).message.includes("CredentialsSignin")) {
-  //     return "CredentialSignin";
-  //   }
-  //   throw error;
-  // }
-  // }
 
   const [code, action] = useFormState(authenticate, undefined);
 
